@@ -1,0 +1,109 @@
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AVANT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/promociones" routerLinkActive="active">Promociones
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/autos" routerLinkActive="active">Autos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Adicionales</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tu reserva</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Ver/Modificar/Cancelar</a>
+              <a class="dropdown-item" href="#">Quickpass</a>
+              <a class="dropdown-item" href="#">Facturar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="formulario-container">
+    <div class="formulario-header">
+      <h2>Formulario de Reserva</h2>
+    </div>
+    <div class="formulario-body">
+      <form>
+        <div class="form-group">
+          <label for="lugarSalida">Lugar de salida:</label>
+          <input type="text" id="lugarSalida" name="lugarSalida" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="fechaSalida">Fecha de salida:</label>
+          <input type="date" id="fechaSalida" name="fechaSalida" class="form-control" required>
+        </div>
+        <label for="horaSalida">Hora de salida:</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="fas fa-clock"></i></span>
+          <input type="time" id="horaSalida" name="horaSalida" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="lugarEntrega">Lugar de entrega:</label>
+          <input type="text" id="lugarEntrega" name="lugarEntrega" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="fechaEntrega">Fecha de entrega:</label>
+          <input type="date" id="fechaEntrega" name="fechaEntrega" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="horaEntrega">Hora de entrega:</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-clock"></i></span>
+              <input type="time" id="horaEntrega" name="horaEntrega" class="form-control" required>
+            </div>
+          </div>
+        <div class="form-group">
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" class="form-control" min="21" required>
+        </div>
+        <div class="form-group">
+          <label for="vehiculo">Vehículo:</label>
+          <select id="vehiculo" name="vehiculo" class="form-control" required>
+            <option value="Mustang">Mustang</option>
+            <option value="SUV">SUV</option>
+            <option value="Compacto">Compacto</option>
+            <!-- Agregar más opciones de vehículos según sea necesario -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="primerNombre">Primer nombre:</label>
+          <input type="text" id="primerNombre" name="primerNombre" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="apellidoPaterno">Apellido paterno:</label>
+          <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="paisOrigen">País de origen:</label>
+          <input type="text" id="paisOrigen" name="paisOrigen" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="correoElectronico">Correo electrónico:</label>
+          <input type="email" id="correoElectronico" name="correoElectronico" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+  
+  

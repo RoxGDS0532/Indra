@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
-import { DetallesAutoComponent } from './components/detalles-auto/detalles-auto.component';
+import { AdminComponent } from './components/admin/admin.component';
 import { AutosComponent } from './components/autos/autos.component';
+import { DetallesAutoComponent } from './components/detalles-auto/detalles-auto.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { PaisComponent } from './components/pais/pais.component';
 import { PromocionesComponent } from './components/promociones/promociones.component';
 import { ReservaComponent } from './components/reserva/reserva.component';
-import { AdminComponent } from './components/admin/admin.component';
-import { PaisComponent } from './components/pais/pais.component';
 
 export const routes: Routes = [
     {
@@ -14,7 +15,7 @@ export const routes: Routes = [
       },
       {
         path : 'home',
-        component : DetallesAutoComponent
+        component : NavigationComponent
       },
       {
         path : 'admin',
